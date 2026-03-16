@@ -26,7 +26,7 @@ import cv2
 from enhance import deskew, apply_clahe, denoise, remove_background
 
 # load image
-image = cv2.imread(r"C:\Projects\python\Eduvision\data\images\student_005\student_005_page_002.png")
+image = cv2.imread(r"C:\Projects\python\Eduvision\DATA\images\student_003\student_003_page_001.png")
 
 # apply enhance functions in order
 deskewed = deskew(image)
