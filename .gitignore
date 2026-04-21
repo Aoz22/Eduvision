@@ -7,3 +7,7 @@ DATA/
 preprocessing/pdfs/
 preprocessing/results/
 preprocessing/test.py
+*.pdf
+demo.py
+demo_output/
+
