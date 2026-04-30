@@ -14,7 +14,7 @@ def convert_pdf_to_png(pdf_path, output_dir, dpi=300):
 
         for page_index in range(len(doc)):
             page = doc[page_index]
-            pixmap = page.get_pixmap(matrix=matrix, colorspace=fitz.csGRAY, alpha=False)
+            pixmap = page.get_pixmap(matrix=matrix, colorspace=fitz.csRGB, alpha=False)
             page_num = page_index + 1
             out_filename = f"{pdf_path.stem}_page_{page_num:03d}.png"
             out_path = output_dir / out_filename
